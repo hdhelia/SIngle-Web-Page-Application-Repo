@@ -1,0 +1,18 @@
+<html ng-app = 'LunchCheck'>
+    <head>
+    <script src  = "angular.js"></script>
+    <script src = "app.js"></script>
+    <title> Mod1Sol </title>
+    </head>
+    <body>
+        <h1>Enter the items you usually eat for lunch :</h1>    
+        <p>Note: I do not consider ", ," empty values as an item</p>     
+        <div ng-controller = 'LunchCheckController'>
+            <input type = "text" ng-model = "food_items"><br></br>
+            <button ng-click='updateMessage();'>Check If Too Much</button>
+            <p>Message is : {{message}}</p>
+        </div>
+        
+    </body>
+
+</html>
